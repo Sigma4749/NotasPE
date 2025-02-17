@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Notas</title> 
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h2>Notas de programación entera</h2>
+        <p>
+            Página <label id="texto_nav1">1</label> de 472 <br/>
+        
+        <button onclick="anterior(document.all['imgV'])"><- précédent</button>
+        <button onclick="siguiente(document.all['imgV'])">suivant -></button>
+        </p>
+
+        <div id="images">
+        <img id="imgV" src="./1.jpg" height="1000" class="center" alt="">
+        </div>
+
+    <script>
+        var objetivo = document.getElementById('texto_nav1');
+        (function(){
+            var i = 1;
+            anterior = function(imgElement){
+            if(i != 1){
+                i = i-1;
+                imgElement.src = "./" + i + ".jpg";
+                objetivo = document.getElementById('texto_nav1');
+                objetivo.innerHTML = i;
+                return;
+            }else{
+                i = 472;
+                imgElement.src = "./" + i + ".jpg";
+                objetivo = document.getElementById('texto_nav1');
+                objetivo.innerHTML = i;
+                return;
+            }
+        }
+            siguiente = function(imgElement){
+                if(i != 472){
+                i = i+1
+                imgElement.src = "./" + i + ".jpg"
+                objetivo = document.getElementById('texto_nav1');
+                objetivo.innerHTML = i;
+                return;
+            }else{
+                i = 1
+                imgElement.src = "./" + i + ".jpg"
+                objetivo = document.getElementById('texto_nav1');
+                objetivo.innerHTML = i;
+                return;
+            }
+        }
+    })()
+    </script>
+        
+    
+    </body>
+
+
+
+</html>

@@ -1,0 +1,35 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+h2{
+  text-align: center;
+  color: #55647B;
+}
+
+h3{
+  color: #55647B;
+}
+
+p{
+  text-align: left;
+  color: #000000;
+}
+
+ .center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#images{
+    text-align:center;
+}
+
+*{
+  background: white;
+}
+
